@@ -1,0 +1,1358 @@
+
+BratchikovDA@316d-9 MINGW64 /g/Hello
+$ git init
+Initialized empty Git repository in //iscsi/userdata/BratchikovDA/Hello/.git/
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git add add .
+fatal: pathspec 'add' did not match any files
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git commit -m "First Commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git statue
+git: 'statue' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git commit -m "First Commit"
+[master (root-commit) eae917b] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git reset
+Unstaged changes after reset:
+M       hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git commit
+[master ab8fc36] Added tag h1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git commit -m "Added standard HTML page tags"
+[master fcf68c5] Added standard HTML page tags
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git commit -m "Added HTML header"
+[master a4c4e4c] Added HTML header
+ 1 file changed, 2 insertions(+)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log
+commit a4c4e4cec68e417758de570b9caa667f206c51cc (HEAD -> master)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:20:47 2022 +0700
+
+    Added HTML header
+
+commit fcf68c54bb80fe09e00cf56ca5362acceb1564bd
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:18:22 2022 +0700
+
+    Added standard HTML page tags
+
+commit ab8fc365ee870790dae47bcfb7043440620bcf82
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:14:00 2022 +0700
+
+    Added tag h1
+
+    Added tag h1
+
+commit eae917bd88344a72693ea2c7f5fa11938628c577
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:10:14 2022 +0700
+
+    First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline
+a4c4e4cec68e417758de570b9caa667f206c51cc (HEAD -> master) Added HTML header
+fcf68c54bb80fe09e00cf56ca5362acceb1564bd Added standard HTML page tags
+ab8fc365ee870790dae47bcfb7043440620bcf82 Added tag h1
+eae917bd88344a72693ea2c7f5fa11938628c577 First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline --max-count=2
+a4c4e4cec68e417758de570b9caa667f206c51cc (HEAD -> master) Added HTML header
+fcf68c54bb80fe09e00cf56ca5362acceb1564bd Added standard HTML page tags
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline --since='5 minutes ago'
+a4c4e4cec68e417758de570b9caa667f206c51cc (HEAD -> master) Added HTML header
+fcf68c54bb80fe09e00cf56ca5362acceb1564bd Added standard HTML page tags
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline --until='5 minutes ago'
+ab8fc365ee870790dae47bcfb7043440620bcf82 Added tag h1
+eae917bd88344a72693ea2c7f5fa11938628c577 First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline --author=<your name>
+bash: syntax error near unexpected token `newline'
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline --all
+a4c4e4cec68e417758de570b9caa667f206c51cc (HEAD -> master) Added HTML header
+fcf68c54bb80fe09e00cf56ca5362acceb1564bd Added standard HTML page tags
+ab8fc365ee870790dae47bcfb7043440620bcf82 Added tag h1
+eae917bd88344a72693ea2c7f5fa11938628c577 First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago'
+a4c4e4c Mon Sep 5 15:20:47 2022 +0700 Added HTML header (Dmitriy)
+fcf68c5 Mon Sep 5 15:18:22 2022 +0700 Added standard HTML page tags (Dmitriy)
+ab8fc36 Mon Sep 5 15:14:00 2022 +0700 Added tag h1 (Dmitriy)
+eae917b Mon Sep 5 15:10:14 2022 +0700 First Commit (Dmitriy)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+* a4c4e4c 2022-09-05 | Added HTML header (HEAD -> master) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+* a4c4e4c 2022-09-05 | Added HTML header (HEAD -> master) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --prettify=oneline
+fatal: unrecognized argument: --prettify=oneline
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --prettify=oneline --all
+fatal: unrecognized argument: --prettify=oneline
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline
+a4c4e4cec68e417758de570b9caa667f206c51cc (HEAD -> master) Added HTML header
+fcf68c54bb80fe09e00cf56ca5362acceb1564bd Added standard HTML page tags
+ab8fc365ee870790dae47bcfb7043440620bcf82 Added tag h1
+eae917bd88344a72693ea2c7f5fa11938628c577 First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git log --pretty=oneline --all
+a4c4e4cec68e417758de570b9caa667f206c51cc (HEAD -> master) Added HTML header
+fcf68c54bb80fe09e00cf56ca5362acceb1564bd Added standard HTML page tags
+ab8fc365ee870790dae47bcfb7043440620bcf82 Added tag h1
+eae917bd88344a72693ea2c7f5fa11938628c577 First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+g
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git commit -m "Added gitignore"
+[master f4d1a30] Added gitignore
+ 1 file changed, 8 insertions(+)
+ create mode 100644 .gitignore
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git st
+git: 'st' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        reset
+        stage
+        stash
+        svn
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git config --global alias.co checkout
+git config --global alias.dump 'cat-file -p'
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git config --global alias.ci commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git config --global alias.st status
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git config --global alias.br branch
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git config --global alias.type 'cat-file -t'
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git config --global alias.dump 'cat-file -p'
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git st
+On branch master
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ st
+bash: st: command not found
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ gs
+bash: gs: command not found
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ gst
+bash: gst: command not found
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git st
+On branch master
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git remote add origin https://github.com/yunglocokid/githowto.git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (master)
+$ git branch -M main
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git push -u origin main
+
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (15/15), 1.37 KiB | 46.00 KiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yunglocokid/githowto.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git origin
+git: 'origin' is not a git command. See 'git --help'.
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status origin
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git log
+commit f4d1a30793b20cf79c0684c0041e8f8932f12d1d (HEAD -> main, origin/main)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:27:18 2022 +0700
+
+    Added gitignore
+
+commit a4c4e4cec68e417758de570b9caa667f206c51cc
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:20:47 2022 +0700
+
+    Added HTML header
+
+commit fcf68c54bb80fe09e00cf56ca5362acceb1564bd
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:18:22 2022 +0700
+
+    Added standard HTML page tags
+
+commit ab8fc365ee870790dae47bcfb7043440620bcf82
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:14:00 2022 +0700
+
+    Added tag h1
+
+    Added tag h1
+
+commit eae917bd88344a72693ea2c7f5fa11938628c577
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:10:14 2022 +0700
+
+    First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git remote
+origin
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git remore origin
+git: 'remore' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branc
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+* f4d1a30 2022-09-05 | Added gitignore (HEAD -> main, origin/main) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout f4d1a30
+Note: switching to 'f4d1a30'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at f4d1a30 Added gitignore
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ cat
+.git/       .gitignore  .profile    hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ cat
+.git/       .gitignore  .profile    hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ cat
+.git/       .gitignore  .profile    hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ cat
+.git/       .gitignore  .profile    hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ git checkout eae917b
+Previous HEAD position was f4d1a30 Added gitignore
+HEAD is now at eae917b First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((eae917b...))
+$ cat hello.html
+Hello World!
+BratchikovDA@316d-9 MINGW64 /g/Hello ((eae917b...))
+$ git checkout f4d1a30
+Previous HEAD position was eae917b First Commit
+HEAD is now at f4d1a30 Added gitignore
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+BratchikovDA@316d-9 MINGW64 /g/Hello ((f4d1a30...))
+$ git checkout eae917b
+Previous HEAD position was f4d1a30 Added gitignore
+HEAD is now at eae917b First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((eae917b...))
+$ cat hello.html
+Hello World!
+BratchikovDA@316d-9 MINGW64 /g/Hello ((eae917b...))
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((eae917b...))
+$ cat hello.html
+Hello World!
+BratchikovDA@316d-9 MINGW64 /g/Hello ((eae917b...))
+$ git checkout main
+Previous HEAD position was eae917b First Commit
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git tag v1-beta
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+* f4d1a30 2022-09-05 | Added gitignore (HEAD -> main, tag: v1-beta, origin/mai
+* a4c4e4c 2022-09-05 | Added HTML header [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .profile
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git add .
+git
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git commit
+Aborting commit due to empty commit message.
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git commit -m ".profile added"
+[main 4456e24] .profile added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .profile
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+* 4456e24 2022-09-05 | .profile added (HEAD -> main) [Dmitriy]
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta, origin/main) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout V1^
+error: pathspec 'V1^' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout v1^
+error: pathspec 'v1^' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout a4c4e4c
+Note: switching to 'a4c4e4c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a4c4e4c Added HTML header
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((a4c4e4c...))
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+BratchikovDA@316d-9 MINGW64 /g/Hello ((a4c4e4c...))
+$ git tag v1-alpha
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((v1-alpha))
+$ git status
+HEAD detached at a4c4e4c
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((v1-alpha))
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((v1-alpha))
+$ git checkout main
+Previous HEAD position was a4c4e4c Added HTML header
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git log
+commit 4456e242132fe92beb7750fa3cd3f05f77ed0398 (HEAD -> main)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:42:18 2022 +0700
+
+    .profile added
+
+commit f4d1a30793b20cf79c0684c0041e8f8932f12d1d (tag: v1-beta, origin/main)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:27:18 2022 +0700
+
+    Added gitignore
+
+commit a4c4e4cec68e417758de570b9caa667f206c51cc (tag: v1-alpha)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:20:47 2022 +0700
+
+    Added HTML header
+
+commit fcf68c54bb80fe09e00cf56ca5362acceb1564bd
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:18:22 2022 +0700
+
+    Added standard HTML page tags
+
+commit ab8fc365ee870790dae47bcfb7043440620bcf82
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:14:00 2022 +0700
+
+    Added tag h1
+
+    Added tag h1
+
+commit eae917bd88344a72693ea2c7f5fa11938628c577
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:10:14 2022 +0700
+
+    First Commit
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout v1~
+error: pathspec 'v1~' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout v1
+error: pathspec 'v1' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout v1-alpha
+Note: switching to 'v1-alpha'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a4c4e4c Added HTML header
+
+BratchikovDA@316d-9 MINGW64 /g/Hello ((v1-alpha))
+$ git checkout main
+Previous HEAD position was a4c4e4c Added HTML header
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout v1^
+error: pathspec 'v1^' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git tag
+v1-alpha
+v1-beta
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist main --all
+* 4456e24 2022-09-05 | .profile added (HEAD -> main) [Dmitriy]
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta, origin/main) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git push
+To https://github.com/yunglocokid/githowto.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/yunglocokid/githowto.gi
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 848 bytes | 0 bytes/s, done.
+From https://github.com/yunglocokid/githowto
+   f4d1a30..bbe9f2c  main       -> origin/main
+Merge made by the 'ort' strategy.
+ commands aliases | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 commands aliases
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+*   e3e337b 2022-09-05 | Merge branch 'main' of https://github.com/yunglocokidithowto (HEAD -> main) [Dmitriy]
+|\
+| * bbe9f2c 2022-09-05 | Create commands aliases (origin/main) [@yunglocokid]
+* | 4456e24 2022-09-05 | .profile added [Dmitriy]
+|/
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+*   e3e337b 2022-09-05 | Merge branch 'main' of https://github.com/yunglocokid
+|\
+| * bbe9f2c 2022-09-05 | Create commands aliases (origin/main) [@yunglocokid]
+* | 4456e24 2022-09-05 | .profile added [Dmitriy]
+|/
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git tag
+v1-alpha
+v1-beta
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout v1^
+error: pathspec 'v1^' did not match any file(s) known to git
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+*   e3e337b 2022-09-05 | Merge branch 'main' of https://github.com/yunglocokid
+|\
+| * bbe9f2c 2022-09-05 | Create commands aliases (origin/main) [@yunglocokid]
+* | 4456e24 2022-09-05 | .profile added [Dmitriy]
+|/
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout hello.html
+Updated 1 path from the index
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git reset HEAD hello.html
+Unstaged changes after reset:
+M       hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git restore --staged hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git add .
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git restore --staged hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout hello.html
+Updated 1 path from the index
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git checkout hello.html
+Updated 0 paths from the index
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 601 bytes | 54.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/yunglocokid/githowto.git
+   bbe9f2c..e3e337b  main -> main
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git add hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git commit -m "Oops, we didn't want this commit"
+[main 5c0b093] Oops, we didn't want this commit
+ 1 file changed, 1 insertion(+)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git revert HEAD
+[main 65fba44] Revert "Oops, we didn't want this commit"
+ 1 file changed, 1 deletion(-)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git revert HEAD --no-edit
+[main 388df54] Revert "Revert "Oops, we didn't want this commit""
+ Date: Mon Sep 5 15:55:47 2022 +0700
+ 1 file changed, 1 insertion(+)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+* 388df54 2022-09-05 | Revert "Revert "Oops, we didn't want this commit"" (HEAD -> main) [Dmitriy]
+* 65fba44 2022-09-05 | Revert "Oops, we didn't want this commit" [Dmitriy]
+* 5c0b093 2022-09-05 | Oops, we didn't want this commit [Dmitriy]
+*   e3e337b 2022-09-05 | Merge branch 'main' of https://github.com/yunglocokid/githowto (origin/main) [Dmitriy]
+|\
+| * bbe9f2c 2022-09-05 | Create commands aliases [@yunglocokid]
+* | 4456e24 2022-09-05 | .profile added [Dmitriy]
+|/
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 687 bytes | 85.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/yunglocokid/githowto.git
+   e3e337b..388df54  main -> main
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+* 388df54 2022-09-05 | Revert "Revert "Oops, we didn't want this commit"" (HEAD -> main, origin/main) [Dmitriy]
+* 65fba44 2022-09-05 | Revert "Oops, we didn't want this commit" [Dmitriy]
+* 5c0b093 2022-09-05 | Oops, we didn't want this commit [Dmitriy]
+*   e3e337b 2022-09-05 | Merge branch 'main' of https://github.com/yunglocokid/githowto [Dmitriy]
+|\
+| * bbe9f2c 2022-09-05 | Create commands aliases [@yunglocokid]
+* | 4456e24 2022-09-05 | .profile added [Dmitriy]
+|/
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git log
+commit 388df5491a0cfaa87900439aa5889c262bee9248 (HEAD -> main, origin/main)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:55:47 2022 +0700
+
+    Revert "Revert "Oops, we didn't want this commit""
+
+    This reverts commit 65fba446e026c4b9e545ad9cb8d8253e0273788e.
+
+commit 65fba446e026c4b9e545ad9cb8d8253e0273788e
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:54:56 2022 +0700
+
+    Revert "Oops, we didn't want this commit"
+
+    This reverts commit 5c0b09339790d24bad51c0d4691ba3b2148e44d3.
+commit 388df5491a0cfaa87900439aa5889c262bee9248 (HEAD -> main, origin/main)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:55:47 2022 +0700
+
+    Revert "Revert "Oops, we didn't want this commit""
+
+    This reverts commit 65fba446e026c4b9e545ad9cb8d8253e0273788e.
+
+commit 65fba446e026c4b9e545ad9cb8d8253e0273788e
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:54:56 2022 +0700
+
+    Revert "Oops, we didn't want this commit"
+
+    This reverts commit 5c0b09339790d24bad51c0d4691ba3b2148e44d3.
+
+commit 5c0b09339790d24bad51c0d4691ba3b2148e44d3
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:54:39 2022 +0700
+
+    Oops, we didn't want this commit
+
+commit e3e337bc2d7a3d0c1178641d4359d3b310ebf926
+Merge: 4456e24 bbe9f2c
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:46:54 2022 +0700
+
+    Merge branch 'main' of https://github.com/yunglocokid/githowto
+
+commit 4456e242132fe92beb7750fa3cd3f05f77ed0398
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:42:18 2022 +0700
+
+    .profile added
+
+commit bbe9f2cdb7741192b4a41ac674ce8c3a3b9a2738
+Author: @yunglocokid <93475161+yunglocokid@users.noreply.github.com>
+Date:   Mon Sep 5 15:34:56 2022 +0700
+
+    Create commands aliases
+
+commit f4d1a30793b20cf79c0684c0041e8f8932f12d1d (tag: v1-beta)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:27:18 2022 +0700
+
+    Added gitignore
+
+commit a4c4e4cec68e417758de570b9caa667f206c51cc (tag: v1-alpha)
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:20:47 2022 +0700
+
+    Added HTML header
+
+commit fcf68c54bb80fe09e00cf56ca5362acceb1564bd
+Author: Dmitriy <BratchikovDA@mer.ci.nsu.ru>
+Date:   Mon Sep 5 15:18:22 2022 +0700
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git revert HEAD --no-edit
+[main 95e8dcb] Revert "Revert "Revert "Oops, we didn't want this commit"""
+ Date: Mon Sep 5 15:58:16 2022 +0700
+ 1 file changed, 1 deletion(-)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git tag oops
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ https://githowto.com/ru/removing_commits_from_a_branch#:~:text=%D0%92%D0%AB%D0%9F%D0%9E%D0%9B%D0%9D%D0%98%D0%A2%D0%95%3A-,git%20reset%20%2D%2Dhard%20v1,-git%20hist
+bash: https://githowto.com/ru/removing_commits_from_a_branch#:~:text=%D0%92%D0%AB%D0%9F%D0%9E%D0%9B%D0%9D%D0%98%D0%A2%D0%95%3A-,git%20reset%20%2D%2Dhard%20v1,-git%20hist: No such file or directory
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git reset --hard v1-alpha
+HEAD is now at a4c4e4c Added HTML header
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch is behind 'origin/main' by 7 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+* a4c4e4c 2022-09-05 | Added HTML header (HEAD -> main, tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist --all
+* 95e8dcb 2022-09-05 | Revert "Revert "Revert "Oops, we didn't want this commit""" (tag: oops) [Dmitriy]
+* 388df54 2022-09-05 | Revert "Revert "Oops, we didn't want this commit"" (origin/main) [Dmitriy]
+* 65fba44 2022-09-05 | Revert "Oops, we didn't want this commit" [Dmitriy]
+* 5c0b093 2022-09-05 | Oops, we didn't want this commit [Dmitriy]
+*   e3e337b 2022-09-05 | Merge branch 'main' of https://github.com/yunglocokid/githowto [Dmitriy]
+|\
+| * bbe9f2c 2022-09-05 | Create commands aliases [@yunglocokid]
+* | 4456e24 2022-09-05 | .profile added [Dmitriy]
+|/
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (HEAD -> main, tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git tag -d oops
+Deleted tag 'oops' (was 95e8dcb)
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist --all
+
+* 388df54 2022-09-05 | Revert "Revert "Oops, we didn't want this commit"" (origin/main) [Dmitriy]
+* 65fba44 2022-09-05 | Revert "Oops, we didn't want this commit" [Dmitriy]
+* 5c0b093 2022-09-05 | Oops, we didn't want this commit [Dmitriy]
+*   e3e337b 2022-09-05 | Merge branch 'main' of https://github.com/yunglocokid/githowto [Dmitriy]
+|\
+| * bbe9f2c 2022-09-05 | Create commands aliases [@yunglocokid]
+* | 4456e24 2022-09-05 | .profile added [Dmitriy]
+|/
+* f4d1a30 2022-09-05 | Added gitignore (tag: v1-beta) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (HEAD -> main, tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git add hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git commit -m "Add an author comment"
+
+[main 86092fc] Add an author comment
+ 1 file changed, 1 insertion(+)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git add hello.html
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git commit --amend -m "Add an author/email comment"
+[main 99d9553] Add an author/email comment
+ Date: Mon Sep 5 16:04:34 2022 +0700
+ 1 file changed, 1 insertion(+)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git hist
+* 99d9553 2022-09-05 | Add an author/email comment (HEAD -> main) [Dmitriy]
+* a4c4e4c 2022-09-05 | Added HTML header (tag: v1-alpha) [Dmitriy]
+* fcf68c5 2022-09-05 | Added standard HTML page tags [Dmitriy]
+* ab8fc36 2022-09-05 | Added tag h1 [Dmitriy]
+* eae917b 2022-09-05 | First Commit [Dmitriy]
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ mkdir lib
+git status
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git mv hello.html lib
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 7 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    hello.html -> lib/hello.html
+
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$ git commit -m "Moved hello.html to lib"
+[main 4603513] Moved hello.html to lib
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename hello.html => lib/hello.html (100%)
+
+BratchikovDA@316d-9 MINGW64 /g/Hello (main)
+$
